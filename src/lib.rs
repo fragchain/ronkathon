@@ -13,6 +13,7 @@
 //!   operations such as point addition, scalar multiplication, and pairing operations.
 //! - Compiler: Simple DSL to write circuits which can be compiled to polynomials used in PLONK.
 
+#![feature(test)]
 #![allow(incomplete_features)]
 #![feature(effects)]
 #![feature(const_trait_impl)]
@@ -31,6 +32,7 @@ pub mod ecdsa;
 pub mod encryption;
 pub mod hashes;
 pub mod hmac;
+pub mod kem;
 pub mod kzg;
 pub mod multi_var_poly;
 pub mod polynomial;
